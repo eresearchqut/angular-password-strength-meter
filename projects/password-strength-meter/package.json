@@ -1,5 +1,5 @@
 {
-  "name": "angular-password-strength-meter",
+  "name": "@eresearchqut/angular-password-strength-meter",
   "version": "12.0.0",
   "dependencies": {
     "tslib": "^2.7.0"
@@ -24,11 +24,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/antoantonyk/password-strength-meter.git"
+    "url": "https://github.com/eresearchqut/angular-password-strength-meter.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/antoantonyk/password-strength-meter/issues"
+    "url": "https://github.com/eresearchqut/angular-password-strength-meter/issues"
   },
-  "homepage": "https://github.com/antoantonyk/password-strength-meter"
+  "homepage": "https://github.com/eresearchqut/angular-password-strength-meter"
 }
