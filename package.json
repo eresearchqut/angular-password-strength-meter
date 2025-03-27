@@ -1,6 +1,6 @@
 {
-  "name": "@eresearchqut/password-strength-meter",
-  "version": "13.0.0",
+  "name": "@eresearchqut/angular-password-strength-meter",
+  "version": "13.0.1",
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
@@ -72,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eresearchqut/angular-password-strength-meter.git"
+    "url": "git+https://github.com/eresearchqut/angular-password-strength-meter.git"
   },
   "license": "MIT",
   "bugs": {
