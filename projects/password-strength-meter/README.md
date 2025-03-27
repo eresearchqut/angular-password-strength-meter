@@ -1,6 +1,6 @@
-[![CI](https://github.com/antoantonyk/password-strength-meter/actions/workflows/ci-workflow.yml/badge.svg)](https://github.com/antoantonyk/password-strength-meter/actions/workflows/ci-workflow.yml)
-[![npm version](https://badge.fury.io/js/angular-password-strength-meter.svg)](https://badge.fury.io/js/angular-password-strength-meter)
-[![Coverage Status](https://coveralls.io/repos/github/antoantonyk/password-strength-meter/badge.svg?branch=master)](https://coveralls.io/github/antoantonyk/password-strength-meter?branch=master)
+[![CI](https://github.com/eresearchqut/angular-password-strength-meter/actions/workflows/ci-workflow.yml/badge.svg)](https://github.com/eresearchqut/angular-password-strength-meter/actions/workflows/ci-workflow.yml)
+[![npm version](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter.svg)](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter)
+[![Coverage Status](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)
 
 # Password Strength Meter For Angular 19
 
@@ -26,11 +26,17 @@ Need lib for Vue.js? [Click here](https://github.com/antoantonyk/vue-password-st
 
 ## Get Started
 
-**Step 1:** npm install (For Angular v17)
+**Step 1:** npm install (For Angular v19)
 
+```sh
+npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 @eresearchqut/angular-password-strength-meter --save
+```
+
+For Angular v18
 ```sh
 npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 angular-password-strength-meter --save
 ```
+
 
 For Angular v15
 
@@ -138,7 +144,7 @@ export class CustomPsmServiceService extends IPasswordStrengthMeterService {
     return { score: 1, feedback: { warning: '', suggestions: [] } };
   }
 
-   scoreAsync(password: string): Promise<number> {
+  scoreAsync(password: string): Promise<number> {
     // TODO - do some async operation
     return new Promise();
   }
