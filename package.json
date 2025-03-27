@@ -1,6 +1,6 @@
 {
   "name": "@eresearchqut/angular-password-strength-meter",
-  "version": "13.0.2",
+  "version": "13.0.3",
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
