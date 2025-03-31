@@ -1,5 +1,5 @@
 {
-  "name": "password-strength-meter",
+  "name": "@eresearchqut/angular-password-strength-meter",
   "version": "13.0.4",
   "scripts": {
     "ng": "ng",

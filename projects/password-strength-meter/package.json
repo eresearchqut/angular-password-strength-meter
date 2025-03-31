@@ -1,8 +1,6 @@
 {
   "name": "@eresearchqut/angular-password-strength-meter",
   "version": "13.0.4",
-  "main": "dist/index",
-  "types": "dist/index",
   "dependencies": {
     "tslib": "^2.8.1"
   },
