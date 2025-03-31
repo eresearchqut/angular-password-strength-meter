@@ -52,6 +52,16 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path-to-lcov: './coverage/password-strength-meter/report-lcov/lcov.info'
 
+      - name: Verify build output
+        run: |
+          if [ ! -f "dist/password-strength-meter/package.json" ]; then
+            echo "Error: dist/password-strength-meter/package.json not found"
+            echo "Build output directory contents:"
+            ls -la dist/
+            ls -la dist/password-strength-meter/ || echo "password-strength-meter directory does not exist"
+            exit 1
+          fi
+
   deploy:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
