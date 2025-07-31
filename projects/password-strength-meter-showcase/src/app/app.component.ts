@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {
   RouterLinkActive,
   RouterLinkWithHref,
@@ -11,13 +11,12 @@ import { PasswordStrengthMeterComponent } from 'angular-password-strength-meter'
 @Component({
     selector: 'app-root',
     imports: [
-        CommonModule,
-        RouterOutlet,
-        RouterLinkWithHref,
-        RouterLinkActive,
-        FormsModule,
-        PasswordStrengthMeterComponent,
-    ],
+    RouterOutlet,
+    RouterLinkWithHref,
+    RouterLinkActive,
+    FormsModule,
+    PasswordStrengthMeterComponent
+],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
