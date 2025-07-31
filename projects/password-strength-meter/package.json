@@ -1,13 +1,13 @@
 {
   "name": "@eresearchqut/angular-password-strength-meter",
-  "version": "13.0.7",
+  "version": "14.0.0",
   "dependencies": {
     "tslib": "^2.8.1"
   },
   "types": "index.d.ts",
   "peerDependencies": {
-    "@angular/common": "^19.2.3",
-    "@angular/core": "^19.2.3",
+    "@angular/common": "^20.1.4",
+    "@angular/core": "^20.1.4",
     "@zxcvbn-ts/core": "^3.0.0",
     "@zxcvbn-ts/language-en": "^3.0.0"
   },
@@ -16,7 +16,7 @@
     "email": "antoantony8@gmail.com"
   },
   "keywords": [
-    "angular 19",
+    "angular 20",
     "password-strength",
     "password-strength-component",
     "password-strength-meter",
