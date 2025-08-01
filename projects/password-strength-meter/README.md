@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter.svg)](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter)
 [![Coverage Status](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)
 
-# Password Strength Meter For Angular 19
+# Password Strength Meter For Angular 20
 
 To display the strength of the password with a visual feedback.
 
@@ -26,7 +26,7 @@ Need lib for Vue.js? [Click here](https://github.com/antoantonyk/vue-password-st
 
 ## Get Started
 
-**Step 1:** npm install (For Angular v19)
+**Step 1:** npm install (For Angular v20)
 
 ```sh
 npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 @eresearchqut/angular-password-strength-meter --save

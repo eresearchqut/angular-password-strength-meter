@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {
   IPasswordStrengthMeterService,
   PasswordStrengthMeterComponent,
@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-custom-service',
-    imports: [CommonModule, FormsModule, PasswordStrengthMeterComponent],
+    imports: [FormsModule, PasswordStrengthMeterComponent],
     providers: [
         {
             provide: IPasswordStrengthMeterService,

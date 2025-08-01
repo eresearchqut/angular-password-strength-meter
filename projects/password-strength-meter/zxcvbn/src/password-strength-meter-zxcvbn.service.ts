@@ -1,4 +1,4 @@
-import { Inject, Injectable, Optional } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { zxcvbn, zxcvbnAsync, zxcvbnOptions } from '@zxcvbn-ts/core';
 import { translations } from '@zxcvbn-ts/language-en';
 import {
@@ -16,11 +16,9 @@ export const DEFAULT_CONFIG: ZxvbnConfigType = {
 
 @Injectable()
 export class PasswordStrengthMeterZXCVBNService extends IPasswordStrengthMeterService {
-  constructor(
-    @Optional()
-    @Inject(ZXCVBN_CONFIG)
-    options: ZxvbnConfigType
-  ) {
+  constructor() {
+    const options = inject<ZxvbnConfigType>(ZXCVBN_CONFIG, { optional: true });
+
     super();
 
     if (options) {

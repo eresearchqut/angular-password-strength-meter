@@ -1,19 +1,14 @@
 /* eslint-disable @angular-eslint/directive-selector */
-import {
-  Directive,
-  ElementRef,
-  HostBinding,
-  Input,
-  OnChanges,
-  Renderer2,
-  SimpleChanges,
-} from '@angular/core';
+import { Directive, ElementRef, HostBinding, Input, OnChanges, Renderer2, SimpleChanges, inject } from '@angular/core';
 
 @Directive({
   standalone: true,
   selector: '.psm__progress-bar',
 })
 export class PSMProgressBarDirective implements OnChanges {
+  private renderer = inject(Renderer2);
+  private el = inject<ElementRef<HTMLDivElement>>(ElementRef);
+
   @Input({ required: true })
   numberOfProgressBarItems!: number;
 
@@ -41,10 +36,7 @@ export class PSMProgressBarDirective implements OnChanges {
     'green',
   ];
 
-  constructor(
-    private renderer: Renderer2,
-    private el: ElementRef<HTMLDivElement>
-  ) {
+  constructor() {
     this.progressBar = this.el.nativeElement;
   }
 
