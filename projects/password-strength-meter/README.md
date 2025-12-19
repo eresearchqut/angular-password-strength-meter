@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter.svg)](https://badge.fury.io/js/@eresearchqut%2Fangular-password-strength-meter)
 [![Coverage Status](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)](https://coveralls.io/repos/github/eresearchqut/angular-password-strength-meter/badge.svg?branch=master)
 
-# Password Strength Meter For Angular 20
+# Password Strength Meter For Angular
 
 To display the strength of the password with a visual feedback.
 
@@ -26,25 +26,13 @@ Need lib for Vue.js? [Click here](https://github.com/antoantonyk/vue-password-st
 
 ## Get Started
 
-**Step 1:** npm install (For Angular v20)
+**Step 1:** npm install
 
 ```sh
 npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 @eresearchqut/angular-password-strength-meter --save
 ```
 
-For Angular v18
-```sh
-npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 angular-password-strength-meter --save
-```
-
-
-For Angular v15
-
-```sh
-npm install @zxcvbn-ts/core@^3.0.0 @zxcvbn-ts/language-en@^3.0.0 angular-password-strength-meter@^8.0.0 --save
-```
-
-**Optional Packages:** zxcvbn packagase are not required if PasswordStrengthMeterModule is using with a custom implementation of IPasswordStrengthMeterService .
+**Optional Packages:** zxcvbn packages are not required if PasswordStrengthMeterModule is using with a custom implementation of IPasswordStrengthMeterService .
 
 **Step 2:** Use the provideZxvbnServiceForPSM in appConfig
 
