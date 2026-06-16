@@ -1,5 +1,6 @@
 /* eslint-disable @angular-eslint/component-selector */
 import {
+  ChangeDetectorRef,
   Component,
   Input,
   OnChanges,
@@ -53,6 +54,8 @@ export class PasswordStrengthMeterComponent implements OnChanges {
     IPasswordStrengthMeterService
   );
 
+  private changeDetectorRef = inject(ChangeDetectorRef);
+
   passwordStrength: number | null = null;
   feedback: Feedback | null = null;
 
@@ -101,6 +104,8 @@ export class PasswordStrengthMeterComponent implements OnChanges {
           this.strengthChange.emit(this.passwordStrength);
           this.prevPasswordStrength = this.passwordStrength;
         }
+
+        this.changeDetectorRef.markForCheck();
       });
   }
 
